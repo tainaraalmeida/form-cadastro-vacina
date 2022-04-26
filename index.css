@@ -1,0 +1,70 @@
+*{
+    margin: 0%;
+    padding: 0%;
+   
+}
+
+body{
+    max-width: 100%;
+  
+}
+
+div>img{
+    align-items: center;
+    margin-top: 90px;
+}
+img{
+    width: 400px;
+    height: 400px;
+}
+
+fieldset{
+    width: 700px;
+    height: 400px;
+    margin-top: 100px;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+    min-width: 30%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.cadVacina{
+  margin: 0 auto;
+}
+
+
+
+#dadosUsuario{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#doses{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    font-size: 10px;
+}
+
+#btn{
+    margin-top: 150px;
+    height: 50px;
+    width: 200px;
+    margin-left: 250px;
+}
+
+.required::after{
+    content: " *";
+    color: red;
+}
+

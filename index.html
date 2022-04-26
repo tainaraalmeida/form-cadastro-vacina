@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<title>Document</title>
+</head>
+
+<body>
+	<section>
+		<div>
+		<img src="Forms.gif">
+	</div>
+		<fieldset>
+			<form>
+				<h1 class="cadVacina">CADASTRO VACINA</h1>
+				<h2>Dados Pessoais</h2>
+				<div id="dadosUsuario">
+					<label for="name" class="required">Nome Completo:</label>
+					<input id="name" type="text" name="nomeCompleto" required>
+					<label for="sangue">Tipo Sanguíneo:
+						<select id="sangue">
+							<option value="ap">A+</option>
+							<option value="bn">A-</option>
+							<option value="bp">B+</option>
+							<option value="bn">B-</option>
+							<option value="abp">AB+</option>
+							<option value="abn">AB-</option>
+							<option value="op">O+</option>
+							<option value="on">O-</option>
+						</select>
+					</label>
+				</div>
+				<div id="enderecos">
+					<label for="cep" class="required">CEP:</label>
+					<input id="cep" type="text">
+					<label for="endereco">Logradouro:</label>
+					<input id="endereco" type="text">
+					<label for="numero">Número:</label>
+					<input id="numero" type="text">
+					<div>
+					<label for="bairro">Bairro:</label>
+					<input id="bairro" type="text">
+					<label for="complemento">Complemento:</label>
+					<input id="complemento" type="text">
+				</div>
+					
+					<label for="cidade">Cidade:</label>
+					<input id="cidade" type="text">
+					<label for="uf">Estado:
+						<select id="uf">
+							<option value="AC">Acre</option>
+							<option value="AL">Alagoas</option>
+							<option value="AP">Amapá</option>
+							<option value="AM">Amazonas</option>
+							<option value="BA">Bahia</option>
+							<option value="CE">Ceará</option>
+							<option value="DF">Distrito Federal</option>
+							<option value="ES">Espírito Santo</option>
+							<option value="GO">Goiás</option>
+							<option value="MA">Maranhão</option>
+							<option value="MT">Mato Grosso</option>
+							<option value="MS">Mato Grosso do Sul</option>
+							<option value="MG">Minas Gerais</option>
+							<option value="PA">Pará</option>
+							<option value="PB">Paraíba</option>
+							<option value="PR">Paraná</option>
+							<option value="PE">Pernambuco</option>
+							<option value="PI">Piauí</option>
+							<option value="RJ">Rio de Janeiro</option>
+							<option value="RN">Rio Grande do Norte</option>
+							<option value="RS">Rio Grande do Sul</option>
+							<option value="RO">Rondônia</option>
+							<option value="RR">Roraima</option>
+							<option value="SC">Santa Catarina</option>
+							<option value="SP">São Paulo</option>
+							<option value="SE">Sergipe</option>
+							<option value="TO">Tocantins</option>
+						</select>
+					</label>
+				</div>
+				<div id="telefones">
+
+					<label for="tel">Telefone Fixo: <input id="tel" type="tel"></label>
+					<label for="cel" class="required">Celular:</label>
+					<input id="cel" type="tel">
+				</div>
+
+				<div id="profissao">
+					<label for="profissao">Profissão: <input id="profissao" type="text"></label>
+					<label for="trabalho">Local de Trabalho: <input id="trabalho" type="text"></label>
+				</div>
+				<h4>Doses da Vacina</h4>
+				<div id="doses">
+					<label><input type="checkbox"> 1ªdose <select>
+							<option value="" disabled selected>Selecione a vacina</option>
+							<option value="astrazeneca">Astrazeneca</option>
+							<option value="coronavac">Coronavac</option>
+							<option value="janssen">Janssen</option>
+							<option value="pfizer">Pfizer</option>
+						</select>
+					</label>
+					<label><input type="checkbox"> 2ªdose <select>
+							<option value="" disabled selected>Selecione a vacina</option>
+							<option value="astrazeneca">Astrazeneca</option>
+							<option value="coronavac">Coronavac</option>
+							<option value="janssen">Janssen</option>
+							<option value="pfizer">Pfizer</option>
+						</select>
+					</label>
+					<label><input type="checkbox"> 3ªdose
+						<select>
+							<option value="" disabled selected>Selecione a vacina</option>
+							<option value="">Astrazeneca</option>
+							<option value="coronavac">Coronavac</option>
+							<option value="janssen">Janssen</option>
+							<option value="pfizer">Pfizer</option>
+						</select>
+					</label>
+					<label for=""><input type="checkbox"> Nenhuma dose</label>
+				</div>
+				<button id="btn" type="submit">Efetuar Cadastro</button>
+			</form>
+		</fieldset>
+	</section>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="cep.js"></script>
+
+</body>
+
+</html>
